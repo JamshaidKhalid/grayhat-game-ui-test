@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import IconButton from '../components/IconButton';
-import { StatusButton, ThreeDotButton } from '../components/Button';
+import { Button, ThreeDotButton } from '../components/Button';
 import ChatInput from '../components/ChatInput';
 import ChatBubble from '../components/ChatBubble';
 
@@ -24,7 +24,7 @@ const Homepage = () => {
     <div className="flex flex-col items-center justify-center h-screen bg-gray-800 space-y-4">
       <div className="flex space-x-4">
         <IconButton />
-        <StatusButton />
+        <Button />
         <ThreeDotButton />
       </div>
       <div className="messages-container mt-4 w-full max-w-md overflow-y-auto flex flex-col space-y-2">

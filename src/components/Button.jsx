@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Button as BaseButton } from '@mui/base/Button';
 
-const StatusButton = () => {
+const Button = () => {
   const [isActive, setIsActive] = useState(false);
 
   const handleClick = () => {
@@ -26,4 +26,4 @@ const ThreeDotButton = () => {
   );
 };
 
-export { StatusButton, ThreeDotButton };
+export { Button, ThreeDotButton };

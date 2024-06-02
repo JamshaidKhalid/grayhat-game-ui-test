@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+body {
+  @apply font-custom;
+}
+
 /* IconButton */
 .icon-button {
   @apply bg-yellow-300 border border-gray-200 p-4 transition-all;

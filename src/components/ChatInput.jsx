@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Button as BaseButton } from '@mui/base/Button';
 import { Input as BaseInput } from '@mui/base/Input';
 

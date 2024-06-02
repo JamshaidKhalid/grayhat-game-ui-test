@@ -73,3 +73,46 @@
 .three-dot-button.active {
   @apply bg-black text-yellow-400;
 }
+
+/* ChatInput */
+.chat-input-container {
+  @apply flex items-center shadow-md bg-white;
+  height: 40px;
+  width: 100%;
+  max-width: 400px; /* Adjusted max width */
+  box-shadow: -4px 4px 0px 0px rgba(0,0,0,1); /* Black left bottom shadow */
+}
+
+.chat-input {
+  @apply flex-grow p-2 outline-none bg-transparent border-none;
+}
+
+.send-button {
+  @apply p-2 bg-white text-black;
+  box-shadow: -4px 4px 0px 0px rgba(0,0,0,1); /* Black left bottom shadow */
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/* ChatBubble */
+.chat-bubble {
+  @apply flex flex-col p-2 shadow-md;
+  max-width: 75%;
+  box-shadow: -4px 4px 0px 0px rgba(0,0,0,0.75);
+}
+
+.chat-bubble.user {
+  @apply bg-white self-end;
+}
+
+.chat-bubble.bot {
+  @apply bg-blue-200 self-start;
+}
+
+.timestamp {
+  @apply text-xs text-pink-600 mb-1;
+}
+
+.message {
+  @apply text-black;
+}

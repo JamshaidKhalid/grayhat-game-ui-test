@@ -2,71 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* IconButton */
+.icon-button {
+  @apply bg-yellow-300 border border-gray-200 p-4 transition-all;
+  @apply flex justify-center items-center;
+  width: 60px; /* Fixed width */
+  height: 60px; /* Fixed height */
+  box-shadow: -4px 4px 0px 0px rgba(0,0,0,0.75); /* Left bottom shadow */
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+.icon-button:hover {
+  @apply bg-white;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+.icon-button:active {
+  @apply bg-gray-300;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.icon-button.active {
+  @apply bg-black text-yellow-400;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.icon {
+  font-size: 24px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* Ensure corners are not rounded */
+.icon-button {
+  @apply rounded-none;
+}
+
+/* StatusButton */
+.status-button {
+  @apply bg-yellow-300 border border-gray-200 p-4 transition-all;
+  @apply flex justify-center items-center;
+  min-width: 100px; /* Min width to hold text */
+  height: 60px; /* Fixed height */
+  box-shadow: -4px 4px 0px 0px rgba(0,0,0,0.75); /* Left bottom shadow */
+}
+
+.status-button:hover {
+  @apply bg-white;
+}
+
+.status-button:active {
+  @apply bg-gray-300;
+}
+
+.status-button.active {
+  @apply bg-black text-yellow-400;
+}
+
+/* ThreeDotButton */
+.three-dot-button {
+  @apply bg-yellow-300 border border-gray-200 p-4 transition-all;
+  @apply flex justify-center items-center;
+  width: 60px; /* Fixed width */
+  height: 60px; /* Fixed height */
+  box-shadow: -4px 4px 0px 0px rgba(0,0,0,0.75); /* Left bottom shadow */
+}
+
+.three-dot-button:hover {
+  @apply bg-white;
+}
+
+.three-dot-button:active {
+  @apply bg-gray-300;
+}
+
+.three-dot-button.active {
+  @apply bg-black text-yellow-400;
 }

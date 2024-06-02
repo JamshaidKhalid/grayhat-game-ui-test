@@ -16,9 +16,11 @@ const ChatBubble = ({ message, timestamp, isUser }) => {
   }, [timestamp]);
 
   return (
-    <div className={`chat-bubble ${isUser ? 'user' : 'bot'}`}>
+    <div className={`chat-bubble-container ${isUser ? 'user' : 'bot'}`}>
       <div className="timestamp">{timeAgo}</div>
-      <div className="message">{message}</div>
+      <div className={`chat-bubble ${isUser ? 'user' : 'bot'}`}>
+        <div className="message">{message}</div>
+      </div>
     </div>
   );
 };

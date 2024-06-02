@@ -21,7 +21,7 @@ const ChatInput = ({ onSendMessage }) => {
   return (
     <div className="chat-input-container flex items-center shadow-md bg-white">
       <BaseInput 
-        className="chat-input flex-grow p-2 outline-none bg-transparent border-none" 
+        className="chat-input flex-grow p-2 outline-none bg-transparent border-none w-full" 
         placeholder="Type your message..." 
         value={message}
         onChange={(e) => setMessage(e.target.value)}

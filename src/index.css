@@ -84,7 +84,7 @@
 }
 
 .chat-input {
-  @apply flex-grow p-2 outline-none bg-transparent border-none;
+  @apply flex-grow p-2 outline-none bg-transparent border-none w-full;
 }
 
 .send-button {
@@ -95,6 +95,22 @@
 }
 
 /* ChatBubble */
+.chat-bubble-container {
+  @apply flex flex-col max-w-full;
+}
+
+.chat-bubble-container.user {
+  @apply items-end;
+}
+
+.chat-bubble-container.bot {
+  @apply items-start;
+}
+
+.timestamp {
+  @apply text-xs text-pink-600 bg-pink-200 px-1 rounded-sm mb-1;
+}
+
 .chat-bubble {
   @apply flex flex-col p-2 shadow-md;
   max-width: 75%;
@@ -109,10 +125,27 @@
   @apply bg-blue-200 self-start;
 }
 
-.timestamp {
-  @apply text-xs text-pink-600 mb-1;
-}
-
 .message {
   @apply text-black;
+}
+
+/* Messages container */
+.messages-container {
+  @apply h-full max-h-96 overflow-y-auto p-2 space-y-2;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(107, 114, 128) rgba(229, 231, 235);
+}
+
+.messages-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.messages-container::-webkit-scrollbar-track {
+  background: rgba(229, 231, 235);
+}
+
+.messages-container::-webkit-scrollbar-thumb {
+  background-color: rgba(107, 114, 128);
+  border-radius: 10px;
+  border: 2px solid rgba(229, 231, 235);
 }

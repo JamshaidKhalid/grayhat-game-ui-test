@@ -1,8 +1,35 @@
-# React + Vite
+# Grayhat Game UI Test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple chat interface application built with React, Tailwind CSS, and Base UI. It allows users to send and receive messages with a dynamic and sleek UI. The application is deployed on Vercel and can be accessed at [Grayhat Game UI Test](https://grayhat-game-ui-test.vercel.app/).
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Prerequisites
+
+Make sure you have Node.js and npm installed on your machine.
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/grayhat-game-ui-test.git
+cd grayhat-game-ui-test
+npm install
+npm run dev
+```
+
+
+## Features
+
+- **IconButton**: A button component with different states (regular, hover, press, active) using FontAwesome icons.
+- **StatusButton**: A status button component displaying "Online (42)" with different states.
+- **ThreeDotButton**: A button component with three dots.
+- **ChatInput**: An input field for typing and sending messages.
+- **ChatBubble**: A component to display messages with timestamps that update in real-time.
+- **Scrollable Messages**: The messages container is scrollable, and it automatically scrolls to the bottom when a new message is added.
+- **Custom Scrollbar**: A sleek and slim scrollbar for the messages container.
+- **Customizable**: Width, height, color, and other styles of each component can be easily customized.
+
+
+
